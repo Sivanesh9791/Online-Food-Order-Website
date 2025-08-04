@@ -1,0 +1,188 @@
+<style>
+   .search-bar{
+    padding: 20px;
+   }
+   .search-bar input{
+    padding: 5px;
+    width:380px;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid rgb(34, 34, 34);
+   }
+   .search-bar input:focus{
+    outline: none;
+   }
+   .search-bar i{
+    position: relative;
+    right:30px;
+    font-size: small;
+    cursor: pointer;
+    color: rgb(61, 60, 60);
+   }
+   .items-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    text-align: center;
+   }
+   .items-container div{
+    flex-basis: 18%;
+    
+   }
+   .items-container div button{
+    padding: 4px 12px;
+    color:white;
+    background-color: black;
+    border: none;
+    border-radius:1px;
+    align-items: center;
+    position:relative;
+    right: 13px;
+   
+    
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav-container">
+        <h1>Foodie</h1>
+        <div>
+            <p><a href="index.html">Home</a></p>
+            <!-- <p><a href="items.html">Items</a></p> -->
+            <p><a href="login.html">Login</a></p>
+        </div>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </nav>
+
+    <div class="pop">
+        <i class="fa-solid fa-xmark" onclick="closenav()"></i>
+        <p><a href="index.html">Home</a></p>
+        <!-- <p><a href="items.html">Items</a></p> -->
+        <p><a href="login.html">Login</a></p>
+    </div>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search.. " id="ip">
+    <i class='fa-solid fa-magnifying-glass'></i> 
+
+</div>
+   
+    <div class="items-container">
+
+        <div class="itemsdiv">
+            <img src="pizza.jpg" alt="" width="150px" height="150px">
+            <p>Pizza</p>
+            <div class="btn">
+                <button type="button" onclick="press()">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="burger.jpg" alt="" width="150px" height="150px">
+            <p>Burger</p>
+            <div class="btn">
+
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="fries.avif" alt="" width="150px" height="150px">
+            <p>French fries</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="frychicken.jpg" alt="" width="150px" height="150px">
+            <p>Fried Chicken</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="parrota.avif" alt="" width="150px" height="150px">
+            <p>Parrota</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+    
+
+
+        <div class="itemsdiv">
+            <img src="pizza.jpg" alt="" width="150px" height="150px">
+            <p>Pizza</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="burger.jpg" alt="" width="150px" height="150px">
+            <p>Burger</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="fries.avif" alt="" width="150px" height="150px">
+            <p>French fries</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="frychicken.jpg" alt="" width="150px" height="150px">
+            <p>Fried Chicken</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+        <div class="itemsdiv">
+            <img src="parrota.avif" alt="" width="150px" height="150px">
+            <p>Parrota</p>
+            <div class="btn">
+                <button type="button">Order Now </button>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="contact-details">
+        <h2>Foodie</h2>
+        <p>Eligendi architecto dicta sint ipsam moles incidunt debitis quis enim.</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@2025Foodie.com</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<script>
+    function press(){
+        alert("Please Login first")
+    }
+
+</script>
